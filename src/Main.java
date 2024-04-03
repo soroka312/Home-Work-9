@@ -9,8 +9,8 @@ public class Main {
         int[] money = {12000, 14000, 10000, 13000, 9000};
         int sum = 0;
 
-        for (int i = 0; i < money.length; i++) {
-            sum = sum + money[i];
+        for (int j : money) {
+            sum = sum + j;
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей.");
 
@@ -22,18 +22,18 @@ public class Main {
 
         int maxWaste = 0;
 
-        for (int i = 0; i < money.length; i++) {
-            if (maxWaste < money[i]) {
-                maxWaste = money[i];
+        for (int j : money) {
+            if (maxWaste < j) {
+                maxWaste = j;
             }
         }
         System.out.println("Максимальная сумма трат за неделю составила " + maxWaste + " рублей.");
 
         int minWaste = 20000;
 
-        for (int i = 0; i < money.length; i++) {
-            if (minWaste > money[i]) {
-                minWaste = money[i];
+        for (int j : money) {
+            if (minWaste > j) {
+                minWaste = j;
             }
         }
         System.out.println("Минимальная сумма трат за неделю составила " + minWaste + " рублей.");
@@ -46,8 +46,8 @@ public class Main {
         double[] wastes = {13232, 18988, 21343, 23873, 11972};
         double total = 0;
 
-        for (int i = 0; i < wastes.length; i++) {
-            total += wastes[i];
+        for (double waste : wastes) {
+            total += waste;
         }
         System.out.println("Средняя сумма трат за месяц составила " + total / wastes.length + " рублей");
 
